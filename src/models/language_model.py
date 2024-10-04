@@ -21,10 +21,9 @@ class LanguageModel(AbstractModel):
     def list_dicts(cls):
         ret = []
         data = cls._collection.find()
-        for leng in data:
+        for lang in data:
             ret.append({
-                "name": leng["name"],
-                "acronym": leng["acronym"]
+                "name": lang["name"],
+                "acronym": lang["acronym"]
             })
         return ret
-        
