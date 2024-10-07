@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint
 from models.history_model import HistoryModel
 
 
